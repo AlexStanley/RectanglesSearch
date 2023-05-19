@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F1A4A5EE-740C-4425-ADFE-868D80992B40}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{7CF58AEC-42CF-412A-A4E0-F6C1769AA22B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RectanglesSearch.Api", "RectanglesSearch.Api\RectanglesSearch.Api.csproj", "{BC5E5796-E240-4A13-B272-BE4CEE9EEF88}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RectanglesSearch.Api.Tests", "RectanglesSearch.Api.Tests\RectanglesSearch.Api.Tests.csproj", "{0A07598C-BA14-4F25-BED8-BB21CE81AEE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RectanglesSearch.Api.Identity", "RectanglesSearch.Api.Identity\RectanglesSearch.Api.Identity.csproj", "{E382FD2A-4724-4EBC-8DA5-813E5BB45DB3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{CCE30333-DCD7-41FE-AC67-2AC1300D06B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RectanglesSearch.Web", "RectanglesSearch.Web\RectanglesSearch.Web.csproj", "{4DE4072B-6478-4463-B34C-302FABD5A632}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC5E5796-E240-4A13-B272-BE4CEE9EEF88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC5E5796-E240-4A13-B272-BE4CEE9EEF88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC5E5796-E240-4A13-B272-BE4CEE9EEF88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC5E5796-E240-4A13-B272-BE4CEE9EEF88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A07598C-BA14-4F25-BED8-BB21CE81AEE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A07598C-BA14-4F25-BED8-BB21CE81AEE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A07598C-BA14-4F25-BED8-BB21CE81AEE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A07598C-BA14-4F25-BED8-BB21CE81AEE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E382FD2A-4724-4EBC-8DA5-813E5BB45DB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E382FD2A-4724-4EBC-8DA5-813E5BB45DB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E382FD2A-4724-4EBC-8DA5-813E5BB45DB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E382FD2A-4724-4EBC-8DA5-813E5BB45DB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DE4072B-6478-4463-B34C-302FABD5A632}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DE4072B-6478-4463-B34C-302FABD5A632}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DE4072B-6478-4463-B34C-302FABD5A632}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DE4072B-6478-4463-B34C-302FABD5A632}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BC5E5796-E240-4A13-B272-BE4CEE9EEF88} = {F1A4A5EE-740C-4425-ADFE-868D80992B40}
+		{0A07598C-BA14-4F25-BED8-BB21CE81AEE0} = {7CF58AEC-42CF-412A-A4E0-F6C1769AA22B}
+		{E382FD2A-4724-4EBC-8DA5-813E5BB45DB3} = {F1A4A5EE-740C-4425-ADFE-868D80992B40}
+		{CCE30333-DCD7-41FE-AC67-2AC1300D06B7} = {F1A4A5EE-740C-4425-ADFE-868D80992B40}
+		{4DE4072B-6478-4463-B34C-302FABD5A632} = {CCE30333-DCD7-41FE-AC67-2AC1300D06B7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6FF45CA4-51AB-45EB-881A-65ED1A813504}
+	EndGlobalSection
+EndGlobal
