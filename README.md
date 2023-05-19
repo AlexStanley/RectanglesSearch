@@ -4,7 +4,13 @@ How to raize the project:
 
 1. Change Server name into appsettings.json on your Server name.
 
-2. Apply mirations to MS QSL database.
+2. Apply mirations to MS QSL database (projects)
+{
+	RectanglesSearch.Api
+	RectanglesSearch.Api.Identity
+} for these projects.
+
+Apply RectanglesSearchIndex from INDEX.sql for Rectangles table (RectangleDatabase)
 
 3. Start three projects simultaniously 
 (
@@ -28,3 +34,6 @@ How to raize the project:
 9. Make authorization: Bearer + token
 
 10. RectanglesSearch.Service.API is ready for testing on Swagger.
+
+# Any further design considerations assuming scaling this system and integrations with external consumers.
+
