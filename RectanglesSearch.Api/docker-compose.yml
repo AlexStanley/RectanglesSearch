@@ -1,0 +1,30 @@
+version: "3.8"
+
+services:
+  rectanglessearchapi:
+     image: rectanglessearchapi
+     container_name: rectanglessearchapi
+     build:
+       context: .
+       dockerfile: ./Dockerfile
+     ports:
+       - 7184:7184
+     depends_on: 
+       - database_api
+  database_api:
+     image: mcr.microsoft.com/mssql/server
+     container_name: 'rectanglessearchapi_database'
+     environment:
+        - ACCEPT_EULA=Y
+        - SA_PASSWORD=RectanglesSearchApi!2023
+     ports:
+        - 1433:1433
+     volumes:
+        - mssql_data:/var/opt/mssql
+volumes:
+  mssql_data_api:
+networks:
+  default:
+    name: searchapinetwork
+    external: true
+   

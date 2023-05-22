@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  rectanglessearchapiidentity:
+    image: rectanglessearchapiidentity
+    container_name: rectanglessearchapiidentity
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 7240:7240
+    depends_on: 
+       - database_identity
+  database_api:
+     image: mcr.microsoft.com/mssql/server
+     container_name: 'rectanglessearchapiidentity_database'
+     environment:
+        - ACCEPT_EULA=Y
+        - SA_PASSWORD=RectanglesSearchApiIdentity!2023
+     ports:
+        - 1434:1434
+     volumes:
+        - mssql_data:/var/opt/mssql
+volumes:
+  mssql_data_api:
+networks:
+  default:
+    name: searchapiidentitynetwork
+    external: true
