@@ -20,9 +20,9 @@ services:
      ports:
         - 1434:1434
      volumes:
-        - mssql_data:/var/opt/mssql
+        - mssql_data_api_identity:/var/opt/mssql
 volumes:
-  mssql_data_api:
+  mssql_data_api_identity:
 networks:
   default:
     name: searchapiidentitynetwork
